@@ -1,0 +1,17 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@mixin boxShadow($color, $opacity) {
+  box-shadow: 15px $color $opacity;
+}

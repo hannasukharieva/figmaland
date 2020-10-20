@@ -1,0 +1,16 @@
+.link {
+  color: $basic-black;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: $secondary-pink;
+  }
+
+  &--basic {
+    color: $basic-blue;
+    text-transform: uppercase;
+    font-size: $font-sm;
+    transition: color .5s;
+  }
+}

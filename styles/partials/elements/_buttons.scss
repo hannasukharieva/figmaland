@@ -1,0 +1,37 @@
+.basic-button {
+  border-radius: 20px;
+  padding: 5px 40px;
+  font-size: $font-s;
+  transition: .25s;
+  
+  &:hover {
+    background-color: $light-purple;
+    border: 1px solid $light-purple;
+    color: $basic-white;
+  }
+
+  @media screen and (min-width: 375px) {
+    padding: 5px 30px;
+  }
+
+  &--transp {
+    background: transparent;
+    border: 1px solid $basic-blue;
+    color: $basic-blue;
+  }
+
+  &--opaque {
+    background-color: $basic-blue;
+    border: 1px solid $basic-blue;
+    color: #FFF;
+  }
+
+  &--white {
+    background-color: $basic-white;
+    border: 1px solid $basic-white;
+  }
+
+  &--fixed {
+    min-width: 250px;
+  }
+}

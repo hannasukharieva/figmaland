@@ -1,0 +1,67 @@
+footer {
+  .footer {
+    @include flexColumn;
+    
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      flex-direction: row;
+    }
+  
+    &__logo {
+      @include flexColumn;
+
+      img {
+        @media screen and (min-width: $breakpoint-lg) {
+          align-self: flex-start;
+        }
+      }
+
+      p {
+        @media screen and (min-width: $breakpoint-lg) {
+          align-self: flex-start;
+        }
+      }
+    }
+
+    &__links {
+      font-size: $font-sm;
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        @media screen and (min-width: $breakpoint-lg) {
+          display: flex;
+          flex-direction: row;
+
+          li {
+            margin-right: 30px;
+          }
+        }
+
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    &__social {
+      margin-top: 100px;
+
+      @media screen and (min-width: $breakpoint-lg) {
+        margin-top: 0px;
+      }
+
+      a:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    a {
+      text-transform: none;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.title {
+  color: $first-gray;
+
+  &--big {
+    font-size: $font-xl;
+  }  
+}
+
+.article {
+  &__title {
+    font-size: $font-m;
+    margin: 20px auto;
+    max-width: 179px;
+    color: $first-gray;
+
+    @media screen and (min-width: $breakpoint-md) {
+      max-width: 100%;
+    }
+  }
+
+  &__text {
+    font-size: $font-sm;
+    color: $secondary-gray;
+
+    &--white {
+      color: $basic-white;
+    }
+  }
+}
+
+.gray-text {
+  color: $secondary-gray;
+}

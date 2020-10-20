@@ -1,0 +1,23 @@
+.focus {
+  padding-top: 100px;
+  background: linear-gradient(180deg,rgba(0, 225, 198, 0.3) 0%, #FFFFFF 100%);
+
+  @media screen and (max-width: $breakpoint-md) {
+    @include flexColumn;
+    
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 46px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  button {
+    margin: 30px auto 20px auto;
+  }
+}

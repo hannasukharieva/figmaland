@@ -1,0 +1,48 @@
+.navigation {
+  @include flexColumn;
+
+  padding: 72px 57px 62px 57px;
+
+  &__pretitle {
+    color: $secondary-yellow;
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__content {
+    font-size: $font-sm;
+    text-align: center;
+    color: $secondary-gray;
+    margin: 7px auto 60px auto;
+  }
+
+  &__buttons {
+    @include flexColumn;
+
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .nav-button {
+      width: 100%;
+      max-width: 317px;
+
+      &:not(:last-child) {
+        margin-bottom: 13px;
+      }
+
+      @media screen and (min-width: $breakpoint-md) {
+        width: auto;
+    
+        &:not(:last-child) {
+          margin-right: 10px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}

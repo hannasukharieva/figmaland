@@ -1,0 +1,39 @@
+.hero {
+  min-height: 700px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 225, 198, 0.3) 30%, #FFFFFF 100%);
+
+  &__contents {
+    @include flexColumn;
+
+    padding: 0 20px;
+  }
+
+  &__title {
+    padding: 30px;
+    color: $secondary-blue;
+    margin-top: 50px;
+    margin-bottom: 17px;
+    text-align: center;
+
+    @media screen and (min-width: $breakpoint-md){
+      font-size: $font-xl;
+      font-weight: 700;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    margin-bottom: 81px;
+    font-size: $font-sm;
+  }
+
+  &__buttons {
+    @include flexCenter;
+
+    .hero__button {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  } 
+}

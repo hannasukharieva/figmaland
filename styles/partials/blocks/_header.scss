@@ -1,0 +1,44 @@
+.header {
+  @include flexCenter;
+  
+  justify-content: space-between;
+  height: 120px;
+  margin-bottom: 45px;
+
+  &__row {
+    width: 100%;
+  }
+
+  &__login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      padding-right: 0;
+    }
+  }
+
+  .menu {
+    @include flexCenter;
+
+    &__items {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      font-size: $font-s;
+    }
+
+    &__item {
+      list-style-type: none;
+
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+}

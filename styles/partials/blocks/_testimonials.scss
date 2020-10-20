@@ -1,0 +1,35 @@
+.testimonials {
+  @include flexColumn;
+  
+  margin-bottom: 50px;
+
+  &__title {
+    font-size: $font-m;
+    margin-bottom: 50px;
+  }
+
+  img {
+    margin-bottom: 50px;
+  }
+
+  &__description {
+    font-size: $font-sm;
+    margin-bottom: 60px;
+    text-align: center;
+    max-width: 550px;
+  }
+
+  &__person {
+    display: flex;
+
+    .person {
+      font-size: $font-s;
+      margin-left: 15px;
+
+      &__name {
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

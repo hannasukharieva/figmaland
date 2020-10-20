@@ -1,0 +1,40 @@
+//variables
+@import "partials/variables/mixins";
+@import "partials/variables/colors";
+@import "partials/variables/breakpoints";
+
+//elements
+@import "partials/elements/fonts";
+@import "partials/elements/buttons";
+@import "partials/elements/links";
+@import "partials/elements/text";
+
+//blocks
+@import "partials/blocks/header";
+@import "partials/blocks/hero";
+@import "partials/blocks/diagram";
+@import "partials/blocks/navigation";
+@import "partials/blocks/opentype";
+@import "partials/blocks/variable";
+@import "partials/blocks/tasks";
+@import "partials/blocks/testimonials";
+@import "partials/blocks/pricing";
+@import "partials/blocks/focus";
+@import "partials/blocks/footer";
+
+body {
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
+}
+
